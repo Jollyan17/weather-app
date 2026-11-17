@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WEATHER APP</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <a href="#" class="logo"><span>☀️</span> Skycast</a>
+      <form class="search">
+        <input
+          type="text"
+          class="search-input"
+          placeholder="Search for a city..."
+          aria-label="Search for a city"
+        />
+        <button type="submit" class="search-button">Search</button>
+      </form>
+
+      <nav>
+        <a href="#" class="active">Today</a>
+        <a href="#" class="">Forecast</a>
+      </nav>
+    </header>
+    <!-- Main Content -->
+    <main>
+      
+      <div class="update-time">
+          <span>update 10:30 AM</span>
+        </div>
+        
+      <section class="current">
+        
+        <div class="current-top">
+            <div class="location">
+                <h2>CURRENT WEATHER</h2>
+                <p>London UK</p>
+                <small>Monday, 16 September </small>
+            </div>
+
+        <div class="weather-img">🌤️</div>
+        </div>
+
+
+        <div class="current-bottom">
+            <p class="degrees"><span>18</span>°C</span></p>
+            <div class="weather-descer"> 
+                <span>Partly cloudy</span>
+                <br>
+                <small>Feels like 17°C</small>
+            </div>
+        </div>
+        
+    </section>
+<!-- Weather Details Section -->
+<section class="weather-details">
+   <p class="label">Today</p>
+  <h2 class="section-title">Weather details</h2>
+
+  <div class="cards-grid">
+    <article class="card">
+      <div class="card-icon">💧</div>
+      <p class="card-label">Humidity</p>
+      <p class="card-value">72%</p>
+    </article>
+
+    <article class="card">
+      <div class="card-icon">💨</div>
+      <p class="card-label">Wind</p>
+      <p class="card-value">14 km/h</p>
+    </article>
+
+    <article class="card">
+      <div class="card-icon">☀️</div>
+      <p class="card-label">Visibility</p>
+      <p class="card-value">10 km</p>
+    </article>
+  </div>
+</section>
+
+<!-- Forecast Section -->
+<section class="forecast">
+  <p class="label">FORECAST</p>
+  <h2 class="forecast-title">Next few hours</h2>
+
+  <div class="hours-container">
+    
+    <div class="hour-card active">
+      <p class="time">Now</p>
+      <div class="icon">⛅</div>
+      <p class="temp">18°</p>
+    </div>
+
+   
+    <div class="hour-card">
+      <p class="time">12 PM</p>
+      <div class="icon">☁️</div>
+      <p class="temp">19°</p>
+    </div>
+
+    <div class="hour-card">
+      <p class="time">2 PM</p>
+      <div class="icon">🌧️</div>
+      <p class="temp">18°</p>
+    </div>
+
+    <div class="hour-card">
+      <p class="time">4 PM</p>
+      <div class="icon">🌤️</div>
+      <p class="temp">17°</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- 5-day Forecast Section -->
+<section class="forecast-section">
+    <div class="forecast-container">
+      <div class="forecast-header">
+        <span class="subtitle">THIS WEEK</span>
+        <h2 class="title">5-day forecast</h2>
+      </div>
+
+      <div class="forecast-grid">
+        
+        <div class="forecast-card">
+          <span class="day">Tue</span>
+          <div class="weather-icon">🌤️</div>
+          <span class="temp">19° / 12°</span>
+        </div>
+
+        
+        <div class="forecast-card">
+          <span class="day">Wed</span>
+          <div class="weather-icon">🌧️</div>
+          <span class="temp">16° / 10°</span>
+        </div>
+
+       
+        <div class="forecast-card">
+          <span class="day">Thu</span>
+          <div class="weather-icon">⛅</div>
+          <span class="temp">17° / 11°</span>
+        </div>
+
+        
+        <div class="forecast-card">
+          <span class="day">Fri</span>
+          <div class="weather-icon">☀️</div>
+          <span class="temp">21° / 13°</span>
+        </div>
+
+        
+        <div class="forecast-card">
+          <span class="day">Sat</span>
+          <div class="weather-icon">🌤️</div>
+          <span class="temp">20° / 12°</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+    </main>
+    <footer class="site-footer">
+    <div class="footer-brand">
+      <strong>Skycast</strong>
+      <p>Simple weather for everyday planning.</p>
+    </div>
+
+    <div class="footer-center">
+      Fictional data for a student project.
+    </div>
+
+    <div class="footer-right">
+      &copy; 2025 Skycast
+    </div>
+  </footer>
+  </body>
+</html>

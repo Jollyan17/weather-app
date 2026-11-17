@@ -1,0 +1,81 @@
+ <!-- Weather Details Section html -->
+<section class="weather-details">
+  <h2 class="section-title">Weather details</h2>
+
+  <div class="cards-row">
+
+    <article class="card">
+      <div class="card-icon">💧</div>
+      <p class="card-label">Humidity</p>
+      <p class="card-value">72%</p>
+    </article>
+
+    <article class="card">
+      <div class="card-icon">💨</div>
+      <p class="card-label">Wind</p>
+      <p class="card-value">14 km/h</p>
+    </article>
+
+    <article class="card">
+      <div class="card-icon">☀️</div>
+      <p class="card-label">Visibility</p>
+      <p class="card-value">10 km</p>
+    </article>
+  </div>
+</section>
+
+ <!-- Weather Details Section css -->
+/* Weather Details Section css*/
+.weather-details {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+.section-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #3b82f6;
+  margin-bottom: 1.25rem;
+  letter-spacing: 0.02em;
+}
+.cards-row {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.card {
+  flex: 1;
+  min-width: 180px;
+  background: #ffffff;
+  border-radius: var(--card-radius);
+  box-shadow: var(--card-shadow);
+  border: var(--card-border);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.4rem;
+  padding: 1.5rem 1.25rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card:hover {
+  transform: translateY(-20px);
+  box-shadow: var(--hover-shadow);
+}
+.card:active {
+  transform: translateY(-1px);
+}
+.card-icon {
+  font-size: 1.6rem;
+  margin-bottom: 0.3rem;
+}
+.card-label {
+  font-size: 0.9rem;
+  color: #64748b;
+  margin: 0;
+}
+.card-value {
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: var(--color);
+  margin: 0;
+}
