@@ -1,0 +1,69 @@
+/* 
+@media screen and (max-width: 756px){
+}
+@supports(display:flex){
+
+}
+/* Mobile phone 
+@media (min-width:576px){}
+@media (min-width:992px){}
+@media (min-width:1200px){}
+@media (min-width:1400px){}
+Mobile phone  in order */
+
+
+/* 1. التصميم الأساسي هنا هو للابتوب (أكبر من 768px) */
+
+/* 2. شاشة الآيباد (768px وأصغر) */
+@media screen and (max-width: 768px) {
+  header {
+    flex-wrap: wrap;
+    padding: 24px;
+  }
+  .search {
+    order: 1;
+    width: 100%;
+  }
+  .search-input {
+    max-width: unset;
+  }
+  .main {
+    padding: 27px;
+  }
+  .current {
+    padding: 5px;
+  }
+  .current-bottom {
+    justify-content: center;
+    gap: 15px;
+  }
+  .location h2 {
+    font-size: 14px;
+  }
+  .degrees span {
+    font-size: 56px;
+  }
+  .forecast-grid {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
+  }
+  .footer {
+    justify-content: center;
+    gap: 15px;
+  }
+}
+
+/* 3. شاشة الهاتف الكبير (576px وأصغر) */
+@media screen and (max-width: 576px) {
+  .forecast-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* 4. شاشة الهاتف الصغير (400px وأصغر) */
+@media screen and (max-width: 400px) {
+  .forecast-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
