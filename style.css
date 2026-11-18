@@ -412,13 +412,14 @@ main {
   border-radius: 16px;
   padding: 16px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   box-shadow: 0 4px 12px rgba(15, 23, 42, 0.04);
   transition:
     transform 0.2s ease,
     box-shadow 0.2s ease;
+    
 }
 
 .forecast-card:hover {
@@ -441,6 +442,7 @@ main {
   font-size: 14px;
   font-weight: 500;
   color: #64748b;
+
 }
 
 @media screen and (max-width: 768px) {
@@ -463,8 +465,10 @@ main {
     padding: 5px;
   }
   .current-bottom {
+    flex-direction: column;
     justify-content: center;
     gap: 15px;
+
   }
   .card{
     flex-direction: row;
@@ -472,6 +476,10 @@ main {
     justify-content: left;
     
   }
+  .forecast-card{
+    gap: 16px;
+  }
+
   .hours-container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
